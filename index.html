@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ISHAN ENTERPRISES - All Building Materials Under One Roof</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#eef2f7;color:#0f2a5a}
+header{background:#fff;display:flex;justify-content:space-between;align-items:center;padding:14px 5%;box-shadow:0 4px 15px rgba(0,0,0,.1);position:sticky;top:0;z-index:10;flex-wrap:wrap;gap:10px}
+.logo{font-size:26px;font-weight:900;line-height:1}
+.logo span{color:#f97316}
+nav{display:flex;gap:22px}
+nav a{text-decoration:none;color:#0f2a5a;font-weight:700;font-size:17px;cursor:pointer;padding-bottom:4px}
+nav a.active{color:#f97316;border-bottom:3px solid #f97316}
+.page{display:none;padding:25px 5% 50px;max-width:1200px;margin:auto}
+.page.active{display:block}
+.hero{display:flex;gap:25px;flex-wrap:wrap}
+.hero-left{background:linear-gradient(180deg,#7fb2e5,#f9c9a8);border-radius:18px;padding:35px;flex:1;min-width:280px}
+.hero-left h1{font-size:42px;line-height:1.05}
+.hero-left p{font-size:19px;margin:14px 0;color:#222}
+.hero-left b{color:#d95d00;font-size:19px}
+.hero-right{flex:1;min-width:280px}
+.hero-right h2{font-size:24px}
+.hero-right p{font-size:17px;color:#333;margin:12px 0;line-height:1.5}
+.btn{display:block;text-align:center;background:#f97316;color:#fff;padding:14px;border-radius:10px;text-decoration:none;font-weight:800;margin:12px 0;font-size:17px}
+.btn2{background:#fff;color:#0f2a5a;border:2px solid #1a8a9a;padding:12px;border-radius:10px;text-align:center;display:block;text-decoration:none;font-weight:800}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:28px 0}
+.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,.08);text-align:center;padding-bottom:16px}
+.card img{width:100%;height:180px;object-fit:cover}
+.card h3{margin:12px 0 6px;font-size:19px}
+.card p{font-size:14px;color:#555;padding:0 12px;line-height:1.4;min-height:38px}
+.order{display:inline-block;background:#f97316;color:#fff;padding:9px 22px;border-radius:8px;text-decoration:none;font-weight:800;margin-top:10px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.stat{background:#c2d9f2;padding:20px;border-radius:12px;border-bottom:4px solid #f97316;text-align:center}
+.stat b{font-size:26px;display:block}
+.contact-box{background:#fff;border-radius:18px;display:flex;gap:25px;padding:28px;flex-wrap:wrap;box-shadow:0 4px 15px rgba(0,0,0,.1)}
+.c-left{flex:1;min-width:260px;background:linear-gradient(180deg,#cfe3f8,#fff);border-left:12px solid #f97316;border-radius:14px;padding:30px}
+.c-right{flex:1.2;min-width:280px}
+input,textarea{width:100%;padding:12px;border:1px solid #ccc;border-radius:8px;margin:6px 0 12px;font-size:15px}
+label{font-weight:700;font-size:14px}
+footer{background:#0f2a5a;color:#fff;text-align:center;padding:18px;font-size:14px;margin-top:20px}
+@media(max-width:700px){.cards{grid-template-columns:1fr 1fr}.hero-left h1{font-size:32px}header{justify-content:center}.stats{grid-template-columns:1fr}}
+@media(max-width:450px){.cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">🏠 ISHAN<br>ENTERPRISES</div>
+<nav>
+<a onclick="show('home',this)" class="active">Home</a>
+<a onclick="show('product',this)">Product</a>
+<a onclick="show('contact',this)">Contact Us</a>
+</nav>
+</header>
+
+<!-- HOME -->
+<div id="home" class="page active">
+<div class="hero">
+<div class="hero-left">
+<h1>ISHAN<br>ENTERPRISES</h1>
+<p>All building materials<br>under one roof</p>
+<b>Your trust is my identity</b>
+</div>
+<div class="hero-right">
+<h2>Welcome to ISHAN ENTERPRISE</h2>
+<p>Hamare yaha sabhi prakar ke building materials milte hai, 10+ saal se aapke bharose ka kaam.</p>
+<a class="btn" href="#" onclick="show('product',document.querySelectorAll('nav a')[1]);return false;">Our Products →</a>
+<a class="btn2" href="https://wa.me/918987413239?text=Namaste, mujhe building material chahiye">💬 WhatsApp: 8987413239</a>
+</div>
+</div>
+
+<div class="cards">
+<div class="card"><img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=600"><h3>🏠 Cement</h3><p>High-strength OPC & PPC Cement</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600"><h3>🧱 Bricks</h3><p>Quality Red Bricks & Blocks</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600"><h3>💬 Steel</h3><p>TMT Bars & Steel Materials</p></div>
+</div>
+
+<div class="stats">
+<div class="stat"><b>15+ Products</b></div>
+<div class="stat"><b>1000+ Customers</b></div>
+<div class="stat"><b>10+ Years</b></div>
+</div>
+</div>
+
+<!-- PRODUCT -->
+<div id="product" class="page">
+<h1>Our Products - All Building Materials</h1>
+<p style="margin:8px 0 10px;color:#444">Quality building materials for construction, delivered to your site</p>
+<div class="cards" id="plist"></div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="page">
+<h1>Contact Us - Humse Judein</h1><br>
+<div class="contact-box">
+<div class="c-left">
+<h2>ISHAN ENTERPRISES</h2><br>
+<p>All building materials under one roof</p><br>
+<b style="color:#d95d00">"Your trust is my identity"</b><br><br>
+<p>⭐ Quality Materials • Reliable • Trusted</p>
+</div>
+<div class="c-right">
+<h2>Get in Touch</h2><br>
+<p>📍 <b>Address:</b> Jand, Daltonganj, Palamu, Jharkhand</p><br>
+<p>📞 <b>Contact:</b> 8987413239</p><br>
+<p>✉️ <b>E-Mail:</b> enterpriseishan44@gmail.com</p><br>
+<a class="btn" style="display:inline-block;padding:10px 20px" href="tel:8987413239">📞 Call Now</a>
+<a class="btn" style="display:inline-block;padding:10px 20px" href="https://wa.me/918987413239">WhatsApp: 8987413239</a>
+<br><br>
+<h2>Send us a Message</h2><br>
+<label>Name</label><input id="n" placeholder="Enter your name">
+<label>Mobile Number</label><input id="m" placeholder="Enter your mobile number">
+<label>Message</label><textarea id="msg" placeholder="Type your message here..."></textarea>
+<a class="btn" href="#" onclick="sendMsg();return false;">Send Message</a>
+<p style="font-size:13px;text-align:center;margin-top:10px">We'll respond to your query within 24 hours • Mon-Sat: 9AM - 6PM</p>
+</div>
+</div>
+</div>
+
+<footer>© 2024 ISHAN ENTERPRISES • All Rights Reserved • enterpriseishan44@gmail.com • +91 8987413239</footer>
+
+<script>
+const products=[
+["Cement","50kg OPC & PPC Cement bag - Strong & Durable","https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=600"],
+["Bricks","High Quality Clay Bricks - Standard 9x4x3","https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600"],
+["TMT Steel","Fe550 TMT Bars - 12mm - Corrosion Resistant","https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600"],
+["Sand & Gitti","River Sand & Aggregate - 20mm Crushed","https://images.unsplash.com/photo-1541625602330-2277a4c46182?w=600"],
+["Tiles","Vitrified Floor Tiles - 600x600mm Anti-Slip","https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600"],
+["Putty & Paint","Wall Putty & Emulsion Paint - Smooth Finish","https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=600"],
+["Electrical Items","Switches, Sockets & Fittings - ISI Certified","https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600"],
+["WPC Chaukhat & Door","Waterproof WPC Frame & Door - Termite Proof","https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600"],
+["CP Sanitary","Taps, Showers & Sanitary Items - Chrome Finish","https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=600"],
+["Granite & Marble","Granite & Marble Slabs - Premium Polished","https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600"],
+["Electric Wires","Copper Wires & Cables - Fire Safe","https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600"],
+["Water Tanks","Plastic Water Storage Tanks - 500-2000L","https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=600"]
+];
+let h="";
+products.forEach(p=>{
+h+=`<div class="card"><img src="${p[2]}"><h3>${p[0]}</h3><p>${p[1]}</p><a class="order" href="https://wa.me/918987413239?text=Namaste, mujhe ${encodeURIComponent(p[0])} chahiye">Order Now</a></div>`;
+});
+document.getElementById("plist").innerHTML=h;
+function show(id,el){
+document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+document.querySelectorAll('nav a').forEach(a=>a.classList.remove('active'));
+if(el) el.classList.add('active');
+window.scrollTo(0,0);
+}
+function sendMsg(){
+let n=document.getElementById('n').value,m=document.getElementById('m').value,msg=document.getElementById('msg').value;
+window.open("https://wa.me/918987413239?text="+encodeURIComponent("Name: "+n+"\nMobile: "+m+"\nMessage: "+msg));
+}
+</script>
+</body>
+</html>
